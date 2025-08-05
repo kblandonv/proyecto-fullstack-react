@@ -1,70 +1,298 @@
-# Getting Started with Create React App
+# 🏪 MiTienda - Proyecto Fullstack React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una plataforma de comercio electrónico completa desarrollada con React, que incluye un área pública para clientes y proveedores, y un panel de administración completo para gestionar el sistema.
 
-## Available Scripts
+## 📋 Tabla de Contenidos
 
-In the project directory, you can run:
+- [Características](#-características)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Instalación](#-instalación)
+- [Uso](#-uso)
+- [API y Base de Datos](#-api-y-base-de-datos)
+- [Funcionalidades](#-funcionalidades)
 
-### `npm start`
+## ✨ Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🌐 **Área Pública (Landing)**
+- **Página de inicio** con barra de búsqueda
+- **Catálogo de productos** con filtros avanzados
+- **Navegación por categorías** con imágenes
+- **Sistema de registro** para clientes y proveedores
+- **Diseño responsive** para todos los dispositivos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛡️ **Panel de Administración**
+- **Dashboard** con estadísticas del sistema
+- **CRUD completo** para todos los módulos:
+  - Roles y permisos
+  - Categorías de productos
+  - Productos (con imágenes)
+  - Servicios
+  - Usuarios del sistema
+  - Gestión de clientes
+  - Gestión de proveedores
+- **Sistema de búsqueda** y paginación
+- **Autenticación** y rutas protegidas
+- **Notificaciones toast** para feedback
 
-### `npm test`
+### 🔍 **Sistema de Búsqueda Avanzada**
+- **Búsqueda por nombre** de productos
+- **Filtros por categoría**
+- **Filtros por rango de precio**
+- **Ordenamiento** (nombre, precio ascendente/descendente)
+- **Búsqueda desde la página de inicio**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologías Utilizadas
 
-### `npm run build`
+### Frontend
+- **React 18** - Biblioteca principal
+- **React Router v6** - Navegación y rutas
+- **CSS3** - Estilos responsivos sin frameworks
+- **Axios** - Cliente HTTP para API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend/API
+- **JSON Server** - API REST local para desarrollo
+- **Node.js** - Entorno de ejecución
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Herramientas de Desarrollo
+- **Create React App** - Configuración inicial
+- **VS Code** - Editor recomendado
+- **Git** - Control de versiones
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Estructura del Proyecto
 
-### `npm run eject`
+\`\`\`
+proyecto-fullstack-react/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── common/
+│   │       ├── ProtectedRoute.js
+│   │       ├── Toast.js
+│   │       └── Toast.css
+│   ├── context/
+│   │   └── AuthContext.js
+│   ├── hooks/
+│   │   └── useToast.js
+│   ├── pages/
+│   │   ├── admin/
+│   │   │   ├── AdminDashboard.js/.css
+│   │   │   ├── AdminLogin.js/.css
+│   │   │   ├── AdminRoles.js/.css
+│   │   │   ├── AdminCategories.js
+│   │   │   ├── AdminProducts.js
+│   │   │   ├── AdminServices.js
+│   │   │   ├── AdminUsers.js
+│   │   │   ├── AdminClients.js
+│   │   │   ├── AdminProviders.js
+│   │   │   └── AdminPages.css
+│   │   └── landing/
+│   │       ├── LandingHome.js/.css
+│   │       ├── ProductsPage.js/.css
+│   │       ├── CategoriesPage.js/.css
+│   │       └── RegisterPage.js/.css
+│   ├── services/
+│   │   └── api.js
+│   ├── utils/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── db.json
+├── package.json
+└── README.md
+\`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Instalación
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerrequisitos
+- Node.js (versión 14 o superior)
+- npm o yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pasos de instalación
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clonar el repositorio**
+   \`\`\`bash
+   git clone https://github.com/tu-usuario/proyecto-fullstack-react.git
+   cd proyecto-fullstack-react
+   \`\`\`
 
-## Learn More
+2. **Instalar dependencias**
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Instalar JSON Server (globalmente)**
+   \`\`\`bash
+   npm install -g json-server
+   \`\`\`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎯 Uso
 
-### Code Splitting
+### Iniciar el proyecto completo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Iniciar la API (JSON Server)**
+   \`\`\`bash
+   npm run server
+   \`\`\`
+   La API estará disponible en: http://localhost:3001
 
-### Analyzing the Bundle Size
+2. **Iniciar la aplicación React** (en otra terminal)
+   \`\`\`bash
+   npm start
+   \`\`\`
+   La aplicación estará disponible en: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Scripts disponibles
 
-### Making a Progressive Web App
+\`\`\`json
+{
+  "start": "react-scripts start",
+  "server": "json-server --watch db.json --port 3001",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🗄️ API y Base de Datos
 
-### Advanced Configuration
+### Endpoints disponibles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+La API REST está construida con JSON Server y proporciona los siguientes endpoints:
 
-### Deployment
+- **GET/POST/PUT/DELETE** `/roles` - Gestión de roles
+- **GET/POST/PUT/DELETE** `/categories` - Categorías de productos
+- **GET/POST/PUT/DELETE** `/products` - Productos del catálogo
+- **GET/POST/PUT/DELETE** `/services` - Servicios ofrecidos
+- **GET/POST/PUT/DELETE** `/users` - Usuarios del sistema
+- **GET/POST/PUT/DELETE** `/clients` - Clientes registrados
+- **GET/POST/PUT/DELETE** `/providers` - Proveedores registrados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Estructura de datos
 
-### `npm run build` fails to minify
+#### Productos
+\`\`\`json
+{
+  "id": "1",
+  "name": "Smartphone Samsung Galaxy",
+  "description": "Smartphone de última generación...",
+  "price": 699.99,
+  "stock": 25,
+  "categoryId": 1,
+  "image": "https://images.unsplash.com/..."
+}
+\`\`\`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Categorías
+\`\`\`json
+{
+  "id": "1",
+  "name": "Electrónicos",
+  "description": "Dispositivos electrónicos y tecnología",
+  "image": "https://images.unsplash.com/..."
+}
+\`\`\`
+
+## 🎮 Funcionalidades
+
+### Área Pública
+
+#### 🏠 Página de Inicio
+- Hero section con barra de búsqueda
+- Tarjetas de características
+- Navegación intuitiva
+
+#### 📱 Catálogo de Productos
+- **Búsqueda por texto** - Buscar productos por nombre
+- **Filtro por categoría** - Dropdown de categorías
+- **Filtro por precio** - Rango mínimo y máximo
+- **Ordenamiento** - Por nombre o precio
+- **Paginación** - Resultados organizados
+- **Diseño en grid** - Vista responsive
+
+#### 🏷️ Navegación por Categorías
+- Grid de categorías con imágenes
+- Contador de productos por categoría
+- Vista detallada por categoría
+
+#### 📝 Sistema de Registro
+- **Registro de clientes** - Formulario básico
+- **Registro de proveedores** - Formulario con datos de empresa
+- **Validación completa** - Validaciones del lado cliente
+- **Campos dinámicos** - Diferentes campos por tipo de usuario
+
+### Panel de Administración
+
+#### 🔐 Autenticación
+- Login seguro (admin@admin.com / admin123)
+- Rutas protegidas
+- Sesión persistente
+
+#### 📊 Dashboard
+- Estadísticas generales del sistema
+- Accesos rápidos a módulos
+- Resumen de datos importantes
+
+#### 🛠️ Gestión de Módulos
+
+**Cada módulo incluye:**
+- ✅ **Crear** - Formularios con validación
+- 📖 **Leer** - Listado con paginación
+- ✏️ **Actualizar** - Edición inline
+- 🗑️ **Eliminar** - Confirmación antes de borrar
+- 🔍 **Buscar** - Filtros y búsqueda en tiempo real
+
+**Módulos específicos:**
+- **Roles** - Gestión de permisos y accesos
+- **Categorías** - Categorización de productos
+- **Productos** - Catálogo completo con imágenes
+- **Servicios** - Servicios ofrecidos
+- **Usuarios** - Usuarios del sistema administrativo
+- **Clientes** - Clientes registrados desde el público
+- **Proveedores** - Empresas proveedoras
+
+## 🎨 Características de Diseño
+
+### 📱 Responsive Design
+- **Mobile First** - Diseñado primero para móviles
+- **Breakpoints optimizados** - 480px, 768px, 1024px
+- **Grid flexible** - Se adapta a cualquier pantalla
+- **Navegación adaptativa** - Menús colapsables en móvil
+
+### 🎭 UX/UI
+- **Colores consistentes** - Paleta de colores moderna
+- **Tipografía legible** - Jerarquía clara de texto
+- **Microinteracciones** - Hover effects y transiciones
+- **Loading states** - Indicadores de carga
+- **Feedback visual** - Notificaciones toast
+
+### 🖼️ Imágenes
+- **Unsplash integration** - Imágenes de alta calidad
+- **Fallback images** - Placeholders automáticos
+- **Optimización** - Lazy loading y redimensionado
+
+## 🔧 Configuración Avanzada
+
+### Variables de Entorno
+Puedes configurar las siguientes variables en un archivo `.env`:
+
+\`\`\`env
+REACT_APP_API_URL=http://localhost:3001
+REACT_APP_APP_NAME=MiTienda
+\`\`\`
+
+### Personalización
+- **Colores** - Modificar variables CSS en cada archivo .css
+- **Logo** - Cambiar en el header de LandingHome
+- **API** - Configurar URL base en src/services/api.js
+
+
+## 🙏 Agradecimientos
+
+- [React](https://reactjs.org/) - Por la biblioteca principal
+- [Unsplash](https://unsplash.com/) - Por las imágenes de alta calidad
+- [JSON Server](https://github.com/typicode/json-server) - Por la API mock sencilla
+- [Create React App](https://create-react-app.dev/) - Por la configuración inicial
+
+---
