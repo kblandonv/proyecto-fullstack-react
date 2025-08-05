@@ -113,7 +113,7 @@ proyecto-fullstack-react/
 
 1. **Clonar el repositorio**
    \`\`\`bash
-   git clone https://github.com/tu-usuario/proyecto-fullstack-react.git
+   git clone https://github.com/kblandonv/proyecto-fullstack-react.git
    cd proyecto-fullstack-react
    \`\`\`
 
