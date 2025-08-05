@@ -1,0 +1,218 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "name": "Administrador",
+      "description": "Acceso completo al sistema"
+    },
+    {
+      "id": "2",
+      "name": "Gerente",
+      "description": "Gestión de operaciones y reportes"
+    },
+    {
+      "name": "Vendedor",
+      "description": "Gestión de ventas y clientes",
+      "id": "3"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electrónicos",
+      "description": "Dispositivos electrónicos y tecnología",
+      "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "Ropa",
+      "description": "Vestimenta y accesorios",
+      "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "Hogar",
+      "description": "Artículos para el hogar y decoración",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "Deportes",
+      "description": "Equipos y artículos deportivos",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone Samsung Galaxy",
+      "description": "Smartphone de última generación con 128GB de almacenamiento",
+      "price": 699.99,
+      "stock": 25,
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "Laptop Dell Inspiron",
+      "description": "Laptop para trabajo y entretenimiento, 16GB RAM, 512GB SSD",
+      "price": 899.99,
+      "stock": 12,
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "Camiseta Nike",
+      "description": "Camiseta deportiva de algodón, disponible en varios colores",
+      "price": 29.99,
+      "stock": 50,
+      "categoryId": 2,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "Sofá Moderno",
+      "description": "Sofá de 3 plazas, tapizado en tela premium",
+      "price": 1299.99,
+      "stock": 5,
+      "categoryId": 3,
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "5",
+      "name": "Balón de Fútbol",
+      "description": "Balón oficial FIFA, cuero sintético de alta calidad",
+      "price": 59.99,
+      "stock": 30,
+      "categoryId": 4,
+      "image": "https://images.unsplash.com/photo-1614632537190-23e4146777db?w=400&h=400&fit=crop"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "name": "Consultoría Tecnológica",
+      "description": "Asesoramiento en implementación de soluciones tecnológicas",
+      "price": 150,
+      "duration": 60
+    },
+    {
+      "id": "2",
+      "name": "Desarrollo Web",
+      "description": "Creación de sitios web personalizados y aplicaciones",
+      "price": 2500,
+      "duration": 480
+    },
+    {
+      "id": "3",
+      "name": "Diseño Gráfico",
+      "description": "Diseño de logos, branding y materiales promocionales",
+      "price": 200,
+      "duration": 120
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Sistema",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "roleId": 1,
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Juan Pérez",
+      "email": "juan@ejemplo.com",
+      "password": "juan123",
+      "roleId": 2,
+      "active": true
+    },
+    {
+      "id": "3",
+      "name": "María García",
+      "email": "maria@ejemplo.com",
+      "password": "maria123",
+      "roleId": 3,
+      "active": true
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Carlos Rodríguez",
+      "email": "carlos@cliente.com",
+      "phone": "+1 234 567 8901",
+      "address": "Calle Principal 123, Ciudad"
+    },
+    {
+      "id": "2",
+      "name": "Ana Martínez",
+      "email": "ana@cliente.com",
+      "phone": "+1 234 567 8902",
+      "address": "Avenida Central 456, Ciudad"
+    },
+    {
+      "id": "3",
+      "name": "Luis González",
+      "email": "luis@cliente.com",
+      "phone": "+1 234 567 8903",
+      "address": "Plaza Mayor 789, Ciudad"
+    },
+    {
+      "id": "a0dd",
+      "name": "test7",
+      "email": "test7@test.com",
+      "phone": "123456789",
+      "password": "1234567",
+      "createdAt": "2025-08-05T17:11:51.773Z",
+      "status": "active"
+    }
+  ],
+  "providers": [
+    {
+      "id": "1",
+      "company": "TechCorp Solutions",
+      "contactName": "Roberto Silva",
+      "email": "contacto@techcorp.com",
+      "phone": "+1 555 123 4567",
+      "address": "Zona Industrial 100, Ciudad"
+    },
+    {
+      "id": "2",
+      "company": "Distribuidora Global",
+      "contactName": "Laura Fernández",
+      "email": "ventas@distribuidora.com",
+      "phone": "+1 555 765 4321",
+      "address": "Centro Comercial 200, Ciudad"
+    },
+    {
+      "id": "3",
+      "company": "Servicios Integrales",
+      "contactName": "Miguel Torres",
+      "email": "info@servicios.com",
+      "phone": "+1 555 987 6543",
+      "address": "Polígono Empresarial 300, Ciudad"
+    },
+    {
+      "id": "a29f",
+      "name": "test6",
+      "email": "test6@test.com",
+      "phone": "123456789",
+      "password": "123456",
+      "createdAt": "2025-08-05T17:11:09.975Z",
+      "status": "active"
+    },
+    {
+      "id": "5326",
+      "company": "TEST1",
+      "contactName": "test1",
+      "email": "test1@test.co",
+      "phone": "12345678",
+      "password": "123456",
+      "createdAt": "2025-08-05T17:16:40.717Z",
+      "status": "active"
+    }
+  ]
+}
