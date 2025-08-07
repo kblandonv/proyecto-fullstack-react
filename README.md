@@ -61,7 +61,7 @@ Una plataforma de comercio electrónico completa desarrollada con React, que inc
 
 ## 📁 Estructura del Proyecto
 
-\`\`\`
+```
 proyecto-fullstack-react/
 ├── public/
 │   └── index.html
@@ -101,7 +101,7 @@ proyecto-fullstack-react/
 ├── db.json
 ├── package.json
 └── README.md
-\`\`\`
+```
 
 ## 🚀 Instalación
 
@@ -112,40 +112,40 @@ proyecto-fullstack-react/
 ### Pasos de instalación
 
 1. **Clonar el repositorio**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/kblandonv/proyecto-fullstack-react.git
    cd proyecto-fullstack-react
-   \`\`\`
+   ```
 
 2. **Instalar dependencias**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Instalar JSON Server (globalmente)**
-   \`\`\`bash
+   ```bash
    npm install -g json-server
-   \`\`\`
+   ```
 
 ## 🎯 Uso
 
 ### Iniciar el proyecto completo
 
 1. **Iniciar la API (JSON Server)**
-   \`\`\`bash
+   ```bash
    npm run server
-   \`\`\`
+   ```
    La API estará disponible en: http://localhost:3001
 
 2. **Iniciar la aplicación React** (en otra terminal)
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
    La aplicación estará disponible en: http://localhost:3000
 
 ### Scripts disponibles
 
-\`\`\`json
+```json
 {
   "start": "react-scripts start",
   "server": "json-server --watch db.json --port 3001",
@@ -153,7 +153,7 @@ proyecto-fullstack-react/
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
-\`\`\`
+```
 
 ## 🗄️ API y Base de Datos
 
@@ -172,7 +172,7 @@ La API REST está construida con JSON Server y proporciona los siguientes endpoi
 ### Estructura de datos
 
 #### Productos
-\`\`\`json
+```json
 {
   "id": "1",
   "name": "Smartphone Samsung Galaxy",
@@ -182,17 +182,17 @@ La API REST está construida con JSON Server y proporciona los siguientes endpoi
   "categoryId": 1,
   "image": "https://images.unsplash.com/..."
 }
-\`\`\`
+```
 
 #### Categorías
-\`\`\`json
+```json
 {
   "id": "1",
   "name": "Electrónicos",
   "description": "Dispositivos electrónicos y tecnología",
   "image": "https://images.unsplash.com/..."
 }
-\`\`\`
+```
 
 ## 🎮 Funcionalidades
 
@@ -277,10 +277,10 @@ La API REST está construida con JSON Server y proporciona los siguientes endpoi
 ### Variables de Entorno
 Puedes configurar las siguientes variables en un archivo `.env`:
 
-\`\`\`env
+```env
 REACT_APP_API_URL=http://localhost:3001
 REACT_APP_APP_NAME=MiTienda
-\`\`\`
+```
 
 ### Personalización
 - **Colores** - Modificar variables CSS en cada archivo .css
